@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  border: 1px solid rgb(202, 202, 202);
+  width: 85vw;
+  max-width: 350px;
+  margin: 60px auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.sub-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.box1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box1 h1 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.box1 p {
+  margin-top: 0;
+  font-size: .9rem;
+  color: #71717A;
+}
+
+.box2 {
+  /* border: 1px solid red; */
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.box2 label {
+  display: block;
+  font-size: .9rem;
+}
+
+/* .note {
+  border: 1px solid rgb(177, 177, 177);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.note p {
+  margin-top: 0;
+  font-size: 1rem;
+} */
+
+.note li {
+  font-size: .8rem;
+  list-style: decimal-leading-zero;
+  margin-bottom: 5px;
+  color: #71717A;
+}
+
+select {
+  padding: 3px;
+  color: #71717A;
+  margin-bottom: 10px;
+}
+
+.cm {
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 8px 16px;
+  /* font-size: .8rem; */
+  border-radius: 5px;
+  background-color: #03DAC6;
+  border: none;
+  color: #18181B;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.bg-none {
+  background: #FAFAFA;
+  color: #18181B;
+  border: 1px solid rgb(160, 160, 160);
+}
+
+.bg-none-dark {
+  background: #151717;
+  color: #b2b2bf;
+  border: 1px solid rgb(160, 160, 160);
+}
+
+.progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: .8rem;
+  padding: 10px;
+  margin-bottom: 0;
+  /* border: 1px solid red; */
+}
+
+.question-div {
+  margin-top: 0;
+  padding: 0 10px;
+  font-size: .5rem;
+  /* border: 1px solid green; */
+}
+
+.readSub-div {
+  border-bottom: 1px solid #71717A;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+
+.readSub-div h1 {
+  font-size: 1rem;
+}
+
+.readSub-div p {
+  font-size: .9rem;
+  color: #71717A;
+}
+
+.m-c {
+  /* border: 1px solid red; */
+  padding: 6px 10px 10px 10px;
+}
+
+.options-div {
+  margin-top: 0;
+  color: #71717A;
+  padding: 0 10px;
+  font-size: .9rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  /* border: 1px solid red; */
+}
+
+.option-div2 input {
+  margin-right: 5px;
+}
+
+.option-div2 {
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.option-input {
+  display: flex;
+  justify-content: center;
+}
+
+.question-h1 {
+  margin-bottom: 15px;
+}
+
+.submit-div {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  width: 100%;
+  border-bottom: 1px solid rgb(202, 202, 202);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  margin-bottom: 20px;
+}
+
+.inside-nav {
+  /* border: 1px solid red; */
+  width: 85vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+.nav-box1 button {
+  margin-bottom: 0;
+  background-color: rgb(108, 97, 208);
+  color: #fff;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+.setting-box2 {
+  padding: 0 10px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  /* border: 1px solid red; */
+  padding: 0 10px;
+  font-size: 1rem;
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+
+.item i {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.cp {
+  padding: 5px 10px;
+}
+
+.okayBtn {
+  margin-top: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saveBtn {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.startBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.startBtn button {
+  margin-bottom: 0;
+}
+
+.text-green {
+  color: rgb(17, 173, 17);
+}
+
+.item input {
+  height: 25px;
+  width: 15px;
+  font-weight: bold;
+  /* padding-left: 10px; */
+  /* margin-right: 3px; */
+  border: none;
+  outline: none;
+}
+
+.timerdiv {
+  display: flex;
+  border: 1px solid rgb(121, 121, 121);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+
+.timerdiv label {
+  height: 14px;
+  font-size: .9rem;
+}
+
+.link {
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(189, 189, 189, 0.9);
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid rgb(202, 202, 202);
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 300px;
+}
+
+.modal-container p {
+  font-size: 1rem;
+}
+
+.modalBtns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.bg-green {
+  background-color: #22c55e;
+  color: #FAFAFA;
+}
+
+/* Remove up and down arrows from number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove up and down arrows in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.resBox1 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 8px;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+}
+
+.resBox2 {
+  /* border: 1px solid red; */
+  padding: 15px;
+}
+
+.question {
+  /* margin-top: 10px; */
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resopt {
+  border: 1px solid black;
+  font-size: .8rem;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.userResponses {
+  /* border: 1px solid red; */
+  margin-bottom: 10px;
+}
+
+.score {
+  font-size: .8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* CSS */
+.correct {
+  background-color: #018786;
+  color: #FAFAFA;
+  /* font-weight: bold; */
+  border: none;
+}
+
+.incorrect {
+  background-color: #B00020;
+  border: none;
+  /* font-weight: bold; */
+  color: #FAFAFA;
+}
+
+.notAttemptDiv {
+  text-align: center;
+  padding: 10px;
+  font-size: .9rem;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #9e3549;
+  color: #FAFAFA;
+}
+
+.warning {
+  background-color: #FF7597;
+  font-size: .7rem;
+  padding: 5px;
+  border-radius: 5px;
+  color: #000;
+  text-align: center;
+
+}
+
+.warning span {
+  font-weight: 600;
+  color: #252525;
+
+  /* color: #9e3549; */
+}
+
+.loading-div {
+  padding: 30px;
+  text-align: center;
+  color: #9b9b9b;
+}
+
+.custom {
+  padding: 10px 0 5px 0;
+  border-bottom: 1px solid rgb(167, 167, 167);
+  border-radius: 5px;
+}
+
+.custom h1 {
+  font-size: 1rem;
+}
+
+.custom p {
+  font-size: .8rem;
+}
+
+.footer {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0;
+  color: #454545;
+  position: fixed;
+  background-color: #fff;
+}
+
+.inside-footer {
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 350px;
+  font-size: .7rem;
+}
+
+.logo {
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: #8324ff;
+}
+
+.validationPara {
+  border: 1px solid red;
+  margin-top: 6px;
+  color: red;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: .7rem;
+}
+
+.sub-timerdiv {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+  padding: 7px 5px;
+  /* border: 1px solid red; */
+}
+
+.sub-timerdiv p {
+  font-size: .8rem;
+}
+
+.sub-timerdiv p span {
+  font-weight: 600;
+}
+
+.confettie-wrap {
+  background-color: fff;
+  padding: 200px;
+}
