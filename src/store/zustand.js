@@ -32,17 +32,23 @@ export const useResultStore = create((set) => ({
     correct: 0,
     markSecured: 0,
     totalMark: 5,
+    userPercentage: 0,
     setStatus: (value) => set({ status: value }),
     setTotalQuestions: (value) => set({ totalQuestions: value }),
     setStoreAttempts: (value) => set({ attempts: value }),
     setCorrect: (value) => set({ correct: value }),
     setMarkSecured: (value) => set({ markSecured: value }),
     setTotalmark: (value) => set({ totalMark: value }),
+    setUserPercentage: (value) => set({ userPercentage: value }),
 }));
 
 export const useSetting = create((set) => ({
     correctMarkValue: 2,
     setCorrectMarkValue: (value) => {
         set({ correctMarkValue: value });
+    },
+    percentage: 30,
+    setPercentage: (value) => {
+        set({ percentage: value });
     },
 }))

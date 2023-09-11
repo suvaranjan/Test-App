@@ -30,9 +30,8 @@ import Loading from "./Loading";
 function Test() {
   const { isDarkMode } = useTheme();
   const { subject, week } = useRead();
-  console.log(week);
   const { timer } = useTimerStore();
-  const { correctMarkValue } = useSetting();
+  const { correctMarkValue, percentage } = useSetting();
   const navigate = useNavigate();
 
   const [shuffledQuiz, setShuffledQuiz] = useState([]);
@@ -52,6 +51,7 @@ function Test() {
     setCorrect,
     setMarkSecured,
     setTotalmark,
+    setUserPercentage,
   } = useResultStore();
 
   const IOTweekArrays = {
@@ -195,16 +195,18 @@ function Test() {
 
     const userMarks = correctAnswers * correctMarkValue;
     const totalMarks = totalQuestions * 2;
-    const passingScore = totalMarks * 0.3;
+    const passingScore = (totalMarks * percentage) / 100;
     const userStatus = userMarks >= passingScore;
+    const testTotalMark = totalQuestions * correctMarkValue;
+    const yourPercentage = (userMarks / testTotalMark) * 100;
 
     setStoreAttempts(totalQuestionsAttempted);
     setCorrect(correctAnswers);
     setTotalQuestions(totalQuestions);
     setMarkSecured(userMarks);
     setStatus(userStatus);
-    setTotalmark(totalQuestions * correctMarkValue);
-
+    setTotalmark(testTotalMark);
+    setUserPercentage(yourPercentage.toFixed(1));
     navigate("/result", { state: { userAttemptsArray } });
   };
 

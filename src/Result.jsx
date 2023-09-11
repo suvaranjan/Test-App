@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useResultStore, useTheme } from "./store/zustand";
 import { useLocation, useNavigate } from "react-router-dom";
 import ConfettiApp from "./ConfettiApp";
@@ -8,16 +8,34 @@ export default function Result() {
   const navigate = useNavigate();
   const { userAttemptsArray } = location.state;
   const { isDarkMode } = useTheme();
-  const { status, totalQuestions, attempts, correct, markSecured, totalMark } =
-    useResultStore();
+  const {
+    status,
+    totalQuestions,
+    attempts,
+    correct,
+    markSecured,
+    totalMark,
+    userPercentage,
+  } = useResultStore();
+
+  const [showConfetti, setShowConfetti] = useState(false);
 
   const handleResponse = () => {
     navigate("/response", { state: { response: userAttemptsArray } });
   };
-  // console.log(userAttemptsArray);
+
+  useEffect(() => {
+    if (status) {
+      setShowConfetti(true);
+      setTimeout(() => {
+        setShowConfetti(false);
+      }, 5000); // 5 seconds
+    }
+  }, []);
+
   return (
     <>
-      {status && <ConfettiApp />}
+      {showConfetti && <ConfettiApp />}
       <div
         className="container"
         style={
@@ -34,7 +52,9 @@ export default function Result() {
           <div className="box1">
             <h1>
               Result :{" "}
-              <span className="text-green">{status ? "Pass" : "Fail"}</span>
+              <span className={`${status ? "pass" : "fail"}`}>
+                {status ? "Pass" : "Fail"}
+              </span>
             </h1>
           </div>
         </div>
@@ -52,10 +72,17 @@ export default function Result() {
             <p>Correct</p>
             <p>{correct}</p>
           </div>
-          <div className="item">
+          <div className="item mb">
             <p>Mark Secured</p>
             <p>
               {markSecured}/{totalMark}
+            </p>
+          </div>
+          <div className="item">
+            <p>Your Percentage</p>
+            <p>
+              {userPercentage}
+              {" %"}
             </p>
           </div>
         </div>
@@ -67,7 +94,7 @@ export default function Result() {
           >
             Retest
           </button>
-          <button onClick={handleResponse}>Show My Response</button>
+          <button onClick={handleResponse}>Show Response</button>
           <button
             className={isDarkMode ? "bg-none-dark" : "bg-none"}
             onClick={() => navigate("/")}

@@ -510,3 +510,27 @@ input[type="number"] {
   background-color: fff;
   padding: 200px;
 }
+
+.perc-div {
+  width: 40px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 0;
+  /* border: 1px solid red; */
+}
+
+.perc-div input {
+  /* border: 1px solid red; */
+  width: 20px;
+  padding-bottom: 2px;
+  padding-right: 0;
+}
+
+.pass {
+  color: #1ea40a;
+}
+
+.fail {
+  color: rgb(230, 85, 85);
+}

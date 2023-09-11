@@ -179,7 +179,7 @@ export default function Sub() {
                 onChange={(e) => setSelectedWeek(e.target.value)}
                 value={selectedWeek}
               >
-                <option value="all">All Week</option>
+                <option value="all">All Weeks</option>
                 <option value="week1">Week 1</option>
                 <option value="week2">Week 2</option>
                 <option value="week3">Week 3</option>
