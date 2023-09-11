@@ -276,10 +276,8 @@ i {
 
 .item input {
   height: 25px;
-  width: 15px;
+  width: 12px;
   font-weight: bold;
-  /* padding-left: 10px; */
-  /* margin-right: 3px; */
   border: none;
   outline: none;
 }
