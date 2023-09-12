@@ -65,7 +65,20 @@ export const CSPweek3 = [
     },
     {
         id: 7,
-        question: "The five goals of information security governance are:",
+        question: `
+        The five goals of information security governance are 2 points: 
+        (1) Aligning information security with business strategy to support organizational objectives.
+        (2) Managing and mitigating threats to information resources by executing appropriate measures.
+        (3) Utilizing information security knowledge and infrastructure efficiently and effectively.
+        (4) Measuring, monitoring, and reporting information security governance metrics to ensure that organizational objectives are achieved.
+        (5) Optimizing information security investments in support of organizational objectives.
+
+        A- Strategic alignment
+        B- Risk management
+        C- Resource management
+        D- Performance measurement
+        E- Value delivery
+        `,
         options: {
             a: "1-B,2-C,3-D,4-C,5-A",
             b: "1-C,2-B,3-A,4-B,5-E",
@@ -76,7 +89,7 @@ export const CSPweek3 = [
     },
     {
         id: 8,
-        question: "Match ISO Series with the corresponding topic",
+        question: "Match ISO Series with the corresponding topic (A) 27000 (1)Series Overview and Terminology (B) 27003 (2)Information Security Management Systems Implementation Guidelines (C) 27004 (3) Information Security Measurements and Metrics (D) 27005 (4) ISMS Risk Management (E) 27006 (5) Requirements for Bodies Providing Audit and Certification of ISMS.",
         options: {
             a: "A-1,B-2,C-3,D-4,E-5",
             b: "A-4,B-2,C-3,D-1,E-5",

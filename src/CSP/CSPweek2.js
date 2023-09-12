@@ -65,7 +65,7 @@ export const CSPweek2 = [
     },
     {
         id: 7,
-        question: "Select the right options of the C.I.A. triad",
+        question: "Select the right options of the C.I.A. triad : (1) Assurance that information is shared only among authorized people or organizations, (2) Assurance that the information is complete and uncorrupted, (3)Assurance that information systems and the necessary data are not available for use when needed.",
         options: {
             a: "(1) True (2) False (3) True",
             b: "(1) False (2) False (3) True",

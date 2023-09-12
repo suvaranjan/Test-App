@@ -67,7 +67,14 @@ export const CSPweek4 = [
     },
     {
         id: 7,
-        question: "What are the elements of a business impact analysis?",
+        question: `What are the elements of a business impact analysis? 
+        (1) Threat attack identification
+        (2) Business unit analysis
+        (3) Attack success scenario development
+        (4) Potential damage assessment
+        (5) Subordinate plan classification
+        (6) Risk management
+        (7) Disaster management`,
         options: {
             a: "1,2,3,4,5 correct",
             b: "1,2,3,5,6 is correct",

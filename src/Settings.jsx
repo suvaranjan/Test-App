@@ -43,7 +43,16 @@ export default function Settings() {
         }
       >
         <div className="sub-div">
-          <div className="box1">
+          <div
+            className="box1"
+            style={
+              isDarkMode
+                ? {
+                    color: "#fff",
+                  }
+                : null
+            }
+          >
             <h1>Settings</h1>
           </div>
         </div>
