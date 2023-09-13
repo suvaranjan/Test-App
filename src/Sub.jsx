@@ -26,6 +26,7 @@ export default function Sub() {
     IOTWeek4Length,
     IOTWeek5Length,
     IOTWeek6Length,
+    IOTWeek7Length,
     IOTAllWeeksLength,
   } = iotAllWeeksLength;
 
@@ -36,6 +37,7 @@ export default function Sub() {
     CSPWeek4Length,
     CSPWeek5Length,
     CSPWeek6Length,
+    CSPWeek7Length,
     CSPAllWeeksLength,
   } = cspAllWeeksLength;
 
@@ -59,6 +61,7 @@ export default function Sub() {
       week4: IOTWeek4Length,
       week5: IOTWeek5Length,
       week6: IOTWeek6Length,
+      week7: IOTWeek7Length,
     },
     CSP: {
       all: CSPAllWeeksLength,
@@ -68,6 +71,7 @@ export default function Sub() {
       week4: CSPWeek4Length,
       week5: CSPWeek5Length,
       week6: CSPWeek6Length,
+      week7: CSPWeek7Length,
     },
   };
 
@@ -186,6 +190,7 @@ export default function Sub() {
                 <option value="week4">Week 4</option>
                 <option value="week5">Week 5</option>
                 <option value="week6">Week 6</option>
+                <option value="week7">Week 7</option>
               </select>
             </div>
             <div>

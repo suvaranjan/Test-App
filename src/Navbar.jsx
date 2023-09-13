@@ -24,7 +24,7 @@ export default function Navbar() {
           ? {
               backgroundColor: "#151717",
               color: "#FAFAFA",
-              border: "1px solid #4a4a4f",
+              borderBottom: "1px solid #4a4a4f",
             }
           : { backgroundColor: "#FAFAFA", color: "#050505" }
       }

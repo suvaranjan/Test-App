@@ -10,6 +10,7 @@ import {
   cspWeek4Ass,
   cspWeek5Ass,
   cspWeek6Ass,
+  cspWeek7Ass,
 } from "./CSP/CSPComplete";
 import {
   iotWeek1Ass,
@@ -18,6 +19,7 @@ import {
   iotWeek4Ass,
   iotWeek5Ass,
   iotWeek6Ass,
+  iotWeek7Ass,
 } from "./IOT/IOTComplete";
 
 // import { cspArray } from "./CSP";
@@ -30,6 +32,7 @@ const IOTweekArrays = {
   week4: iotWeek4Ass,
   week5: iotWeek5Ass,
   week6: iotWeek6Ass,
+  week7: iotWeek7Ass,
   all: iotArray,
 };
 const CSPweekArrays = {
@@ -39,6 +42,7 @@ const CSPweekArrays = {
   week4: cspWeek4Ass,
   week5: cspWeek5Ass,
   week6: cspWeek6Ass,
+  week7: cspWeek7Ass,
   all: cspArray,
 };
 

@@ -89,14 +89,16 @@ export default function Result() {
 
         <div className="okayBtn">
           <button
-            className={isDarkMode ? "bg-none-dark" : "bg-none"}
+            className={isDarkMode ? "bg-none-dark res-btn" : "bg-none res-btn"}
             onClick={() => navigate("/test")}
           >
             Retest
           </button>
-          <button onClick={handleResponse}>Show Response</button>
+          <button onClick={handleResponse} className="res-btn">
+            Responses
+          </button>
           <button
-            className={isDarkMode ? "bg-none-dark" : "bg-none"}
+            className={isDarkMode ? "bg-none-dark res-btn" : "bg-none res-btn"}
             onClick={() => navigate("/")}
           >
             Home
