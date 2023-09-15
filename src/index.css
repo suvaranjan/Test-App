@@ -202,13 +202,18 @@ button {
 }
 
 .inside-nav {
-  width: 85vw;
+  width: 400px;
+  max-width: 95vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 8px;
   align-items: center;
   margin: 0 auto;
   max-width: 350px;
+}
+
+.music {
+  color: #78787d;
 }
 
 .nav-box1 button {

@@ -14,6 +14,13 @@ export const useTheme = create((set) => ({
     },
 }))
 
+export const useMusic = create((set) => ({
+    isMusic: false,
+    setIsMusic: (newValue) => {
+        set({ isMusic: newValue });
+    },
+}))
+
 export const useRead = create((set) => ({
     subject: "",
     setSubject: (sub) => {
