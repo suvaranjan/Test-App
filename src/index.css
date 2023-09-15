@@ -522,7 +522,6 @@ input[type="number"] {
 }
 
 .perc-div input {
-  /* border: 1px solid red; */
   width: 20px;
   padding-bottom: 2px;
   padding-right: 0;

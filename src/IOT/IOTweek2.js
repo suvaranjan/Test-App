@@ -133,7 +133,7 @@ export const IOTweek2 = [
     },
     {
         id: 13,
-        question: "State whether the following statement is True or False. Statement: The IEEE 802.15.4 is a well-known standard for low data-rate Wireless Personal Area Network (WPAN).",
+        question: "Statement: The IEEE 802.15.4 is a well-known standard for low data-rate Wireless Personal Area Network (WPAN).",
         options: {
             a: "True",
             b: "False",

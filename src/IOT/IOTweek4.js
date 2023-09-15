@@ -1,7 +1,7 @@
 export const IOTweek4 = [
     {
         id: 1,
-        question: "State whether the following statement is true or false. Statement: Coverage in WSN is defined as the area-of-interest is covered satisfactorily.",
+        question: "Statement: Coverage in WSN is defined as the area-of-interest is covered satisfactorily.",
         options: {
             a: "True",
             b: "False"
@@ -142,7 +142,7 @@ export const IOTweek4 = [
     },
     {
         id: 14,
-        question: "State whether the following statement is true or false. Statement: The M2M Device Platform enables access to objects connected to the Internet anywhere any time.",
+        question: "Statement: The M2M Device Platform enables access to objects connected to the Internet anywhere any time.",
         options: {
             a: "True",
             b: "False"
@@ -151,7 +151,7 @@ export const IOTweek4 = [
     },
     {
         id: 15,
-        question: "State whether the following statement is true or false. Statement: The M2M Application Platform provides integrated services based on device collected data-sets.",
+        question: "Statement: The M2M Application Platform provides integrated services based on device collected data-sets.",
         options: {
             a: "True",
             b: "False"

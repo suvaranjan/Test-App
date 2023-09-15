@@ -8,7 +8,7 @@ export const CSPweek7 = [
             c: "Trusted VPN",
             d: "Transport VPN"
         },
-        answer: "Transport VPN"
+        answer: "Trusted VPN"
     },
     {
         id: 2,
@@ -28,7 +28,7 @@ export const CSPweek7 = [
             a: "True",
             b: "False"
         },
-        answer: "True"
+        answer: "False"
     },
     {
         id: 4,
@@ -74,14 +74,14 @@ export const CSPweek7 = [
     },
     {
         id: 8,
-        question: "Fill in the blank _________ denotes the rate at which authorized users are denied access to systems or areas as a result of a failure in the biometric device. This failure is also known as ________.",
+        question: "Fill in the blank _______ denotes the rate at which authorized users are denied access to systems or areas as a result of a failure in the biometric device. This failure is also known as _______.",
         options: {
             a: "False reject rate, Type I error",
             b: "False accept rate, Type 2 error",
             c: "False accept rate, Type I error",
             d: "False reject rate, Type 2 error"
         },
-        answer: "False reject rate, Type I error"
+        answer: "False accept rate, Type 2 error"
     },
     {
         id: 9,

@@ -100,7 +100,7 @@ export const CSPweek3 = [
     },
     {
         id: 9,
-        question: "(1)_________ is authorized by policy from senior management and is usually carried out by senior IT and information security executives, such as the (2) _________ and (3) ________",
+        question: "(1)_______ is authorized by policy from senior management and is usually carried out by senior IT and information security executives, such as the (2) _______ and (3) ______",
         options: {
             a: "1-ISG 2-CIO, 3-CISO",
             b: "1-CO,2, 2-CIO,3- CISO",

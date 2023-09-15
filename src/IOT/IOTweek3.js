@@ -1,7 +1,7 @@
 export const IOTweek3 = [
     {
         id: 1,
-        question: "State whether the following statement is true or false. Statement: Wired HART lacks a network layer.",
+        question: "Statement: Wired HART lacks a network layer.",
         options: {
             a: "True",
             b: "False"
@@ -21,7 +21,7 @@ export const IOTweek3 = [
     },
     {
         id: 3,
-        question: "State whether the following statement is True or False. Statement: Super-frames in HART consist of grouped 20ms wide timeslots.",
+        question: "Statement: Super-frames in HART consist of grouped 20ms wide timeslots.",
         options: {
             a: "True",
             b: "False"
@@ -96,7 +96,7 @@ export const IOTweek3 = [
     },
     {
         id: 10,
-        question: "State whether the following statement is true or false. Statement: Paging in Bluetooth is the process of forming a connection between two Bluetooth devices.",
+        question: "Statement: Paging in Bluetooth is the process of forming a connection between two Bluetooth devices.",
         options: {
             a: "True",
             b: "False"

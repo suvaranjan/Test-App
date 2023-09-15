@@ -59,7 +59,7 @@ export const IOTweek7 = [
             c: "['Sensor','Actuator%Arduino']",
             d: "['Sensor@Actuator%Arduino']"
         },
-        answer: "['Sensor','Actuator','Arduino']"
+        answer: "['Sensor@Actuator','Arduino']"
     },
     {
         id: 7,
