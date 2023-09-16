@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTheme, useMusic } from "./store/zustand";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function Navbar() {
   const { isDarkMode, setIsDarkMode } = useTheme();
-
+  const musicSrc = "../src/music.mp3";
+  const audioRef = useRef(null);
   const { isMusic, setIsMusic } = useMusic();
 
   const navigate = useNavigate();
@@ -15,8 +16,12 @@ export default function Navbar() {
   };
 
   const handleMusic = () => {
+    if (!isMusic) {
+      audioRef.current.play();
+    } else {
+      audioRef.current.pause();
+    }
     setIsMusic(!isMusic);
-    toast.success("Music will be functional shortly!");
   };
 
   if (isDarkMode) {
@@ -70,13 +75,14 @@ export default function Navbar() {
           </div>
           <div className="nav-box1">
             <i
-              // className={`uil ${
-              //   isMusic ? "uil-music-note" : "uil-music-tune-slash music"
-              // }`}
-              className="uil uil-music-tune-slash music"
+              className={`uil ${
+                isMusic ? "uil-music-note" : "uil-music-tune-slash music"
+              }`}
+              // className="uil uil-music-tune-slash music"
               onClick={handleMusic}
             ></i>
           </div>
+          <audio ref={audioRef} src={musicSrc} loop></audio>
         </div>
       </div>
     </>
