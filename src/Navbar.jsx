@@ -1,27 +1,14 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useTheme, useMusic } from "./store/zustand";
-import toast, { Toaster } from "react-hot-toast";
+import { useTheme } from "./store/zustand";
 
 export default function Navbar() {
   const { isDarkMode, setIsDarkMode } = useTheme();
-  const musicSrc = "../src/music.mp3";
-  const audioRef = useRef(null);
-  const { isMusic, setIsMusic } = useMusic();
 
   const navigate = useNavigate();
 
   const toggleDayNightMode = () => {
     setIsDarkMode(!isDarkMode);
-  };
-
-  const handleMusic = () => {
-    if (!isMusic) {
-      audioRef.current.play();
-    } else {
-      audioRef.current.pause();
-    }
-    setIsMusic(!isMusic);
   };
 
   if (isDarkMode) {
@@ -32,16 +19,6 @@ export default function Navbar() {
 
   return (
     <>
-      {" "}
-      <Toaster
-        toastOptions={{
-          style: {
-            background: isDarkMode ? "#151717" : null,
-            color: isDarkMode ? "#fff" : null,
-            border: isDarkMode ? "1px solid #38383d" : null,
-          },
-        }}
-      />
       <div
         className="navbar"
         style={
@@ -73,16 +50,6 @@ export default function Navbar() {
               onClick={toggleDayNightMode}
             ></i>
           </div>
-          <div className="nav-box1">
-            <i
-              className={`uil ${
-                isMusic ? "uil-music-note" : "uil-music-tune-slash music"
-              }`}
-              // className="uil uil-music-tune-slash music"
-              onClick={handleMusic}
-            ></i>
-          </div>
-          <audio ref={audioRef} src={musicSrc} loop></audio>
         </div>
       </div>
     </>
