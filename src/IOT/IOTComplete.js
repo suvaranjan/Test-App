@@ -5,6 +5,8 @@ import { IOTweek4 } from "./IOTweek4";
 import { IOTweek5 } from "./IOTweek5";
 import { IOTweek6 } from "./IOTweek6";
 import { IOTweek7 } from "./IOTweek7";
+import { IOTweek8 } from "./IOTweek8";
+import { IOTweek9 } from "./IOTweek9";
 import { iotArray } from "../IOT"
 
 export const iotWeek1Ass = IOTweek1;
@@ -14,6 +16,8 @@ export const iotWeek4Ass = IOTweek4;
 export const iotWeek5Ass = IOTweek5;
 export const iotWeek6Ass = IOTweek6;
 export const iotWeek7Ass = IOTweek7;
+export const iotWeek8Ass = IOTweek8;
+export const iotWeek9Ass = IOTweek9;
 
 export const iotAllWeeksLength = {
     IOTWeek1Length: IOTweek1.length,
@@ -23,5 +27,7 @@ export const iotAllWeeksLength = {
     IOTWeek5Length: IOTweek5.length,
     IOTWeek6Length: IOTweek6.length,
     IOTWeek7Length: IOTweek7.length,
+    IOTWeek8Length: IOTweek8.length,
+    IOTWeek9Length: IOTweek9.length,
     IOTAllWeeksLength: iotArray.length,
 }
