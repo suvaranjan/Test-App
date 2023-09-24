@@ -103,19 +103,19 @@ export const IOTweek5 = [
         },
         answer: "analogRead()"
     },
+    // {
+    //     id: 11,
+    //     question: "Consider the following Arduino sketch. What must be inserted in the place of ‘??’ within the second pinMode() function in void setup()?",
+    //     options: {
+    //         a: "INPUT",
+    //         b: "OUTPUT",
+    //         c: "None of these",
+    //         d: "Anyone of these is okay"
+    //     },
+    //     answer: "OUTPUT"
+    // },
     {
         id: 11,
-        question: "Consider the following Arduino sketch. What must be inserted in the place of ‘??’ within the second pinMode() function in void setup()?",
-        options: {
-            a: "INPUT",
-            b: "OUTPUT",
-            c: "None of these",
-            d: "Anyone of these is okay"
-        },
-        answer: "OUTPUT"
-    },
-    {
-        id: 12,
         question: "For integrating different types of sensors (such as DHT) with Arduino, you would need to install and #include the sensor specific libraries in your sketch.",
         options: {
             a: "True",
@@ -124,8 +124,8 @@ export const IOTweek5 = [
         answer: "True"
     },
     {
-        id: 13,
-        question: "Which of the following best describes the command given below?\n\nServoDemo.write(180);",
+        id: 12,
+        question: "Which of the following best describes the command ? : ServoDemo.write(180);",
         options: {
             a: "Creates an instance of the servo",
             b: "Pin writes 180 to the servo",
@@ -135,7 +135,7 @@ export const IOTweek5 = [
         answer: "Servo moves 180 degrees"
     },
     {
-        id: 14,
+        id: 13,
         question: "In an Arduino sketch, for the default function void setup(), which of the following is true?",
         options: {
             a: "Point where the code terminates.",
@@ -146,7 +146,7 @@ export const IOTweek5 = [
         answer: "Point where the code starts."
     },
     {
-        id: 15,
+        id: 14,
         question: "Which among the following can also be described as a relay, which is an actuator?",
         options: {
             a: "Pneumatic actuator",

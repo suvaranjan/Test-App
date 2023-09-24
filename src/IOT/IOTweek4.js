@@ -43,14 +43,14 @@ export const IOTweek4 = [
     },
     {
         id: 5,
-        question: "State true or false. The disadvantages of stationary Wireless Sensor Networks are -",
+        question: "State true or false : The disadvantages of stationary Wireless Sensor Networks are - (1) Node failure may result in partition of networks, (2) Topology cannot change automatically.",
         options: {
-            a: "Statement-I True, Statement-II False",
-            b: "Both Statements are False",
-            c: "Both Statements are True",
+            a: "(1) True, (2) False",
+            b: "Both are False",
+            c: "Both are True",
             d: "None of these"
         },
-        answer: "Both Statements are True"
+        answer: "Both are True"
     },
     {
         id: 6,

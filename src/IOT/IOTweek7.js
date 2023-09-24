@@ -114,19 +114,19 @@ export const IOTweek7 = [
         },
         answer: "SDN separates the data plane and control plane."
     },
+    // {
+    //     id: 12,
+    //     question: "Consider the following figure below. To which issue of SDN does this particular figure can be related to?",
+    //     options: {
+    //         a: "Controller placement issue",
+    //         b: "Flow Rule placement issue",
+    //         c: "Hardware placement issue",
+    //         d: "Analysis placement issue"
+    //     },
+    //     answer: "Flow Rule placement issue"
+    // },
     {
         id: 12,
-        question: "Consider the following figure below. To which issue of SDN does this particular figure can be related to?",
-        options: {
-            a: "Controller placement issue",
-            b: "Flow Rule placement issue",
-            c: "Hardware placement issue",
-            d: "Analysis placement issue"
-        },
-        answer: "Flow Rule placement issue"
-    },
-    {
-        id: 13,
         question: "Suppose that there are two LANs, each configured to be SDN enabled with their own set of switches and controller. Which among the following directional APIs will be used for communication between the two controllers?",
         options: {
             a: "Northbound API",
@@ -137,7 +137,7 @@ export const IOTweek7 = [
         answer: "East-Westbound API"
     },
     {
-        id: 14,
+        id: 13,
         question: "Which among the following is true?",
         options: {
             a: "Backup Controllers have no use in SDN",
@@ -148,7 +148,7 @@ export const IOTweek7 = [
         answer: "Backup controllers take over when the main controller goes down"
     },
     {
-        id: 15,
+        id: 14,
         question: "IoT being data-intensive and having a lot of security concerns, it is a good idea to integrate SDN with IoT to mitigate many of these issues.",
         options: {
             a: "True",
