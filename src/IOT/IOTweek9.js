@@ -130,7 +130,7 @@ export const IOTweek9 = [
             c: "T = 2(Tf + Tc) + Tfp + Tcp",
             d: "T = 4(Tf + Tc + Tfp + Tcp)"
         },
-        answer: "T = Tf + Tc + Tfp + Tcp"
+        answer: "T = 2(Tf + Tc) + Tfp + Tcp"
     },
     {
         id: 14,
@@ -152,6 +152,6 @@ export const IOTweek9 = [
             c: "Software View",
             d: "None of these"
         },
-        answer: "System View"
+        answer: "Node View"
     }
 ];

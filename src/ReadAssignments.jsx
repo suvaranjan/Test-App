@@ -60,7 +60,6 @@ export default function ReadAssignments() {
   const { id } = useParams();
   const { isDarkMode } = useTheme();
   let selectedArray;
-  // const selectedArray = weekArrays[id] || [];
 
   if (subject === "IOT") {
     selectedArray = IOTweekArrays[id] || [];

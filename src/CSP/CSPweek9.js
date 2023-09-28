@@ -39,7 +39,7 @@ export const CSPweek9 = [
             a: "True",
             b: "False"
         },
-        answer: "False"
+        answer: "True"
     },
     {
         id: 5,
