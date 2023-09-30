@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   useTheme,
   useRead,
@@ -9,6 +9,7 @@ import {
 
 import { iotAllWeeksLength } from "./IOT/IOTComplete";
 import { cspAllWeeksLength } from "./CSP/CSPComplete";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Sub() {
   const [maxTimerValue, setMaxTimerValue] = useState(30);
@@ -30,6 +31,7 @@ export default function Sub() {
     IOTWeek8Length,
     IOTWeek9Length,
     IOTWeek10Length,
+    IOTWeek11Length,
     IOTAllWeeksLength,
   } = iotAllWeeksLength;
 
@@ -44,6 +46,7 @@ export default function Sub() {
     CSPWeek8Length,
     CSPWeek9Length,
     CSPWeek10Length,
+    CSPWeek11Length,
     CSPAllWeeksLength,
   } = cspAllWeeksLength;
 
@@ -71,6 +74,7 @@ export default function Sub() {
       week8: IOTWeek8Length,
       week9: IOTWeek9Length,
       week10: IOTWeek10Length,
+      week11: IOTWeek11Length,
     },
     CSP: {
       all: CSPAllWeeksLength,
@@ -84,6 +88,7 @@ export default function Sub() {
       week8: CSPWeek8Length,
       week9: CSPWeek9Length,
       week10: CSPWeek10Length,
+      week11: CSPWeek11Length,
     },
   };
 
@@ -117,10 +122,21 @@ export default function Sub() {
     }
   };
 
+  const handleAlert = () => {
+    return toast.success(
+      "All questions and answers are from NPTEL assignments",
+      {
+        duration: 7000,
+        style: { fontSize: ".8rem" },
+      }
+    );
+  };
+
   // Update totalQuestion when selectedWeek changes
   useEffect(() => {
     updateTotalQuestion();
     updateMaxTimerValue();
+    handleAlert();
   }, [selectedWeek, selectedSubject]);
 
   // Handle form submission
@@ -137,154 +153,167 @@ export default function Sub() {
   const maxTotalQuestions = maxValues[selectedSubject][selectedWeek];
 
   return (
-    <div
-      className="container"
-      style={
-        isDarkMode
-          ? {
-              backgroundColor: "#151717",
-              color: "#FAFAFA",
-              border: "1px solid #4a4a4f",
-            }
-          : null
-      }
-    >
-      <div className="sub-div">
-        <div className="box1">
-          <h1>NPTEL TEST</h1>
-          <p style={isDarkMode ? { color: "#b2b2bf" } : null}>Week 1 to 12</p>
-        </div>
+    <>
+      <Toaster
+        toastOptions={{
+          style: {
+            background: isDarkMode ? "#151717" : null,
+            color: isDarkMode ? "#fff" : null,
+            border: isDarkMode ? "1px solid #38383d" : null,
+          },
+        }}
+      />
+      <div
+        className="container"
+        style={
+          isDarkMode
+            ? {
+                backgroundColor: "#151717",
+                color: "#FAFAFA",
+                border: "1px solid #4a4a4f",
+              }
+            : null
+        }
+      >
+        <div className="sub-div">
+          <div className="box1">
+            <h1>NPTEL TEST</h1>
+            <p style={isDarkMode ? { color: "#b2b2bf" } : null}>Week 1 to 12</p>
+          </div>
 
-        <div className="box2">
-          <form onSubmit={handleSubmit}>
-            <div>
-              <label htmlFor="sub">Choose your subject</label>
-              <select
-                id="sub"
-                name="sub"
-                style={
-                  isDarkMode
-                    ? {
-                        backgroundColor: "#151717",
-                        color: "#b2b2bf",
-                        border: "1px solid #4a4a4f",
-                      }
-                    : null
-                }
-                onChange={(e) => setSelectedSubject(e.target.value)}
-                value={selectedSubject}
-              >
-                <option value="IOT">Internet of things</option>
-                <option value="CSP">Cyber security and privacy</option>
-              </select>
-            </div>
-            <div>
-              <label htmlFor="week">Choose a Week</label>
-              <select
-                id="week"
-                name="week"
-                style={
-                  isDarkMode
-                    ? {
-                        backgroundColor: "#151717",
-                        color: "#b2b2bf",
-                        border: "1px solid #4a4a4f",
-                      }
-                    : null
-                }
-                onChange={(e) => setSelectedWeek(e.target.value)}
-                value={selectedWeek}
-              >
-                <option value="all">All Weeks</option>
-                <option value="week1">Week 1</option>
-                <option value="week2">Week 2</option>
-                <option value="week3">Week 3</option>
-                <option value="week4">Week 4</option>
-                <option value="week5">Week 5</option>
-                <option value="week6">Week 6</option>
-                <option value="week7">Week 7</option>
-                <option value="week8">Week 8</option>
-                <option value="week9">Week 9</option>
-              </select>
-            </div>
-            <div>
-              <label htmlFor="timerValue">Set Timer</label>
-              <div
-                className="timerdiv sub-timerdiv"
-                style={
-                  isDarkMode
-                    ? {
-                        border: "1px solid #4a4a4f",
-                      }
-                    : null
-                }
-              >
-                <input
-                  type="range"
-                  name="timerValue"
-                  id="timerValue"
-                  min="1"
-                  max={maxTimerValue}
-                  value={timerValue} // Bind the value to the state
-                  inputMode="numeric"
+          <div className="box2">
+            <form onSubmit={handleSubmit}>
+              <div>
+                <label htmlFor="sub">Choose your subject</label>
+                <select
+                  id="sub"
+                  name="sub"
                   style={
                     isDarkMode
                       ? {
                           backgroundColor: "#151717",
                           color: "#b2b2bf",
-                          border: "none",
+                          border: "1px solid #4a4a4f",
                         }
                       : null
                   }
-                  onChange={handleTimerSliderChange} // Handle slider changes
-                />
-                <p>
-                  <span>{timerValue}</span> minutes
-                </p>
+                  onChange={(e) => setSelectedSubject(e.target.value)}
+                  value={selectedSubject}
+                >
+                  <option value="IOT">Internet of things</option>
+                  <option value="CSP">Cyber security and privacy</option>
+                </select>
               </div>
-            </div>
-            <div>
-              <label htmlFor="totalQuestion">Set Total Question</label>
-              <div
-                className="timerdiv sub-timerdiv"
-                style={
-                  isDarkMode
-                    ? {
-                        border: "1px solid #4a4a4f",
-                      }
-                    : null
-                }
-              >
-                <input
-                  type="range"
-                  name="totalQuestion"
-                  id="totalQuestion"
-                  min="1"
-                  max={maxTotalQuestions} // Set the maximum value dynamically
-                  value={totalQuestion} // Bind the value to the state
-                  inputMode="numeric"
+              <div>
+                <label htmlFor="week">Choose a Week</label>
+                <select
+                  id="week"
+                  name="week"
                   style={
                     isDarkMode
                       ? {
                           backgroundColor: "#151717",
                           color: "#b2b2bf",
-                          border: "none",
+                          border: "1px solid #4a4a4f",
                         }
                       : null
                   }
-                  onChange={handleTotalQuestionSliderChange} // Handle slider changes
-                />
-                <p>
-                  <span>{totalQuestion}</span> questions
-                </p>
+                  onChange={(e) => setSelectedWeek(e.target.value)}
+                  value={selectedWeek}
+                >
+                  <option value="all">All Weeks</option>
+                  <option value="week1">Week 1</option>
+                  <option value="week2">Week 2</option>
+                  <option value="week3">Week 3</option>
+                  <option value="week4">Week 4</option>
+                  <option value="week5">Week 5</option>
+                  <option value="week6">Week 6</option>
+                  <option value="week7">Week 7</option>
+                  <option value="week8">Week 8</option>
+                  <option value="week9">Week 9</option>
+                  <option value="week10">Week 10</option>
+                  <option value="week11">Week 11</option>
+                </select>
               </div>
-            </div>
-            <div className="startBtn">
-              <button type="submit">Start</button>
-            </div>
-          </form>
+              <div>
+                <label htmlFor="timerValue">Set Timer</label>
+                <div
+                  className="timerdiv sub-timerdiv"
+                  style={
+                    isDarkMode
+                      ? {
+                          border: "1px solid #4a4a4f",
+                        }
+                      : null
+                  }
+                >
+                  <input
+                    type="range"
+                    name="timerValue"
+                    id="timerValue"
+                    min="1"
+                    max={maxTimerValue}
+                    value={timerValue} // Bind the value to the state
+                    inputMode="numeric"
+                    style={
+                      isDarkMode
+                        ? {
+                            backgroundColor: "#151717",
+                            color: "#b2b2bf",
+                            border: "none",
+                          }
+                        : null
+                    }
+                    onChange={handleTimerSliderChange} // Handle slider changes
+                  />
+                  <p>
+                    <span>{timerValue}</span> minutes
+                  </p>
+                </div>
+              </div>
+              <div>
+                <label htmlFor="totalQuestion">Set Total Question</label>
+                <div
+                  className="timerdiv sub-timerdiv"
+                  style={
+                    isDarkMode
+                      ? {
+                          border: "1px solid #4a4a4f",
+                        }
+                      : null
+                  }
+                >
+                  <input
+                    type="range"
+                    name="totalQuestion"
+                    id="totalQuestion"
+                    min="1"
+                    max={maxTotalQuestions} // Set the maximum value dynamically
+                    value={totalQuestion} // Bind the value to the state
+                    inputMode="numeric"
+                    style={
+                      isDarkMode
+                        ? {
+                            backgroundColor: "#151717",
+                            color: "#b2b2bf",
+                            border: "none",
+                          }
+                        : null
+                    }
+                    onChange={handleTotalQuestionSliderChange} // Handle slider changes
+                  />
+                  <p>
+                    <span>{totalQuestion}</span> questions
+                  </p>
+                </div>
+              </div>
+              <div className="startBtn">
+                <button type="submit">Start</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
