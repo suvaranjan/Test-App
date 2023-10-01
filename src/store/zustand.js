@@ -14,6 +14,9 @@ export const useTheme = create((set) => ({
     },
 }))
 
+const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+useTheme.setState({ isDarkMode: prefersDarkMode });
+
 export const useMusic = create((set) => ({
     isMusic: false,
     setIsMusic: (newValue) => {

@@ -539,3 +539,31 @@ input[type="number"] {
 .fail {
   color: rgb(230, 85, 85);
 }
+
+.alert {
+  background-color: #fff;
+  border: 1px solid rgb(202, 202, 202);
+  max-width: 90vw;
+  width: 350px;
+  font-size: .8rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.alert span {
+  color: #402695;
+  font-weight: 600;
+}
+
+body[data-theme='dark'] .alert {
+  background-color: #151717;
+  color: #fff;
+  border: 1px solid #38383d;
+}
+
+body[data-theme='dark'] .alert span {
+  color: #bdabfb;
+}

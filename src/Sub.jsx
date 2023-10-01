@@ -122,15 +122,35 @@ export default function Sub() {
     }
   };
 
+  const handleDismiss = () => {
+    toast.dismiss();
+  };
+
   const handleAlert = () => {
-    return toast.success(
-      "All questions and answers are from NPTEL assignments",
+    return toast.custom(
+      <div className="alert">
+        <div className="alertBox1">
+          All questions and answers are from official <span>NPTEL</span>{" "}
+          assignments
+        </div>
+        <div className="alertBox2">
+          <i class="uil uil-times" onClick={handleDismiss}></i>
+        </div>
+      </div>,
       {
-        duration: 7000,
+        duration: 8000,
         style: { fontSize: ".8rem" },
+        exit: {
+          duration: 0,
+          fade: true,
+        },
       }
     );
   };
+
+  useEffect(() => {
+    document.body.setAttribute("data-theme", isDarkMode ? "dark" : "light");
+  }, [isDarkMode]);
 
   // Update totalQuestion when selectedWeek changes
   useEffect(() => {
@@ -154,15 +174,21 @@ export default function Sub() {
 
   return (
     <>
-      <Toaster
-        toastOptions={{
-          style: {
-            background: isDarkMode ? "#151717" : null,
-            color: isDarkMode ? "#fff" : null,
-            border: isDarkMode ? "1px solid #38383d" : null,
-          },
-        }}
-      />
+      <Toaster>
+        {(t) => (
+          <ToastBar
+            toast={t}
+            style={{
+              background: t.style.background || (isDarkMode ? "#151717" : null),
+              color: t.style.color || (isDarkMode ? "#fff" : null),
+              border:
+                t.style.border || (isDarkMode ? "1px solid #38383d" : null),
+              animation: t.visible ? "custom-enter 1s ease" : "none",
+            }}
+          />
+        )}
+      </Toaster>
+
       <div
         className="container"
         style={
