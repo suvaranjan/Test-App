@@ -19,16 +19,7 @@ export default function Footer() {
     >
       <div className="inside-footer">
         Made with {"❤️"} by{" "}
-        <span
-          className="suva"
-          style={
-            isDarkMode
-              ? {
-                  color: "#bdabfb",
-                }
-              : null
-          }
-        >
+        <span className="suva">
           <Link className="logo" to="https://suvaranjan.vercel.app/">
             Suvaranjan
           </Link>

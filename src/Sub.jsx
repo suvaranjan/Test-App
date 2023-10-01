@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import {
   useTheme,
   useRead,
+  useAlert,
   useTimerStore,
   useResultStore,
 } from "./store/zustand";
@@ -17,6 +18,7 @@ export default function Sub() {
   const { isDarkMode } = useTheme();
   const navigate = useNavigate();
   const { setSubject, setWeek } = useRead();
+  const { showAlert, setShowAlert } = useAlert();
   const { setTimer } = useTimerStore();
   const { setTotalQuestions } = useResultStore();
 
@@ -123,29 +125,32 @@ export default function Sub() {
   };
 
   const handleDismiss = () => {
-    toast.dismiss();
+    toast.remove();
   };
 
   const handleAlert = () => {
-    return toast.custom(
-      <div className="alert">
-        <div className="alertBox1">
-          All questions and answers are from official <span>NPTEL</span>{" "}
-          assignments
-        </div>
-        <div className="alertBox2">
-          <i class="uil uil-times" onClick={handleDismiss}></i>
-        </div>
-      </div>,
-      {
-        duration: 8000,
-        style: { fontSize: ".8rem" },
-        exit: {
-          duration: 0,
-          fade: true,
-        },
-      }
-    );
+    if (!showAlert) {
+      toast.custom(
+        <div className="alert">
+          <div className="alertBox1">
+            All questions and answers are from official <span>NPTEL</span>{" "}
+            assignments
+          </div>
+          <div className="alertBox2">
+            <i class="uil uil-times" onClick={handleDismiss}></i>
+          </div>
+        </div>,
+        {
+          duration: 10000,
+          style: { fontSize: ".8rem" },
+          exit: {
+            duration: 0,
+            fade: true,
+          },
+        }
+      );
+      setShowAlert(!showAlert);
+    }
   };
 
   useEffect(() => {
@@ -156,8 +161,11 @@ export default function Sub() {
   useEffect(() => {
     updateTotalQuestion();
     updateMaxTimerValue();
-    handleAlert();
   }, [selectedWeek, selectedSubject]);
+
+  useEffect(() => {
+    handleAlert();
+  }, []);
 
   // Handle form submission
   const handleSubmit = (event) => {
@@ -174,20 +182,15 @@ export default function Sub() {
 
   return (
     <>
-      <Toaster>
-        {(t) => (
-          <ToastBar
-            toast={t}
-            style={{
-              background: t.style.background || (isDarkMode ? "#151717" : null),
-              color: t.style.color || (isDarkMode ? "#fff" : null),
-              border:
-                t.style.border || (isDarkMode ? "1px solid #38383d" : null),
-              animation: t.visible ? "custom-enter 1s ease" : "none",
-            }}
-          />
-        )}
-      </Toaster>
+      <Toaster
+        toastOptions={{
+          style: {
+            background: isDarkMode ? "#151717" : null,
+            color: isDarkMode ? "#fff" : null,
+            border: isDarkMode ? "1px solid #38383d" : null,
+          },
+        }}
+      />
 
       <div
         className="container"

@@ -14,15 +14,22 @@ export const useTheme = create((set) => ({
     },
 }))
 
-const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-useTheme.setState({ isDarkMode: prefersDarkMode });
-
-export const useMusic = create((set) => ({
-    isMusic: false,
-    setIsMusic: (newValue) => {
-        set({ isMusic: newValue });
+export const useAlert = create((set) => ({
+    showAlert: false,
+    setShowAlert: (alert) => {
+        set({ showAlert: alert });
     },
 }))
+
+// const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+// useTheme.setState({ isDarkMode: prefersDarkMode });
+
+// export const useMusic = create((set) => ({
+//     isMusic: true,
+//     setIsMusic: (newValue) => {
+//         set({ isMusic: newValue });
+//     },
+// }))
 
 export const useRead = create((set) => ({
     subject: "",
