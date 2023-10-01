@@ -24,7 +24,7 @@ export default function Footer() {
           style={
             isDarkMode
               ? {
-                  color: "#8324ff",
+                  color: "#bdabfb",
                 }
               : null
           }

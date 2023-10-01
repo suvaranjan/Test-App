@@ -561,7 +561,7 @@ input[type="number"] {
 body[data-theme='dark'] .alert {
   background-color: #151717;
   color: #fff;
-  border: 1px solid #38383d;
+  border: 1px solid #4a4a4f;
 }
 
 body[data-theme='dark'] .alert span {
