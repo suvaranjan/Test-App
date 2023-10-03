@@ -29,7 +29,11 @@
             "dest":"/"
         },        
         {
-            "src":"/readmode/:week",
+            "src":"/readmode/week[1-9]",
+            "dest":"/"
+        },
+        {
+            "src":"/readmode/all",
             "dest":"/"
         }
     ]
