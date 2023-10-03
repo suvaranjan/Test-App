@@ -117,11 +117,22 @@ export default function Settings() {
               </div>
 
               <div className="saveBtn">
-                <button type="submit">Save</button>
+                <button className="saveBtn-btn" type="submit">
+                  Save
+                </button>
               </div>
             </Form>
           )}
         </Formik>
+        {/* <p className="report-p">
+          Found anything wrong ?{" "}
+          <a
+            className="report-Link"
+            href={`mailto:suvaranjan.services@gmail.com?subject=Bug Report`}
+          >
+            Report
+          </a>
+        </p> */}
       </div>
     </>
   );

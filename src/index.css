@@ -262,16 +262,18 @@ i {
 }
 
 .saveBtn {
-  padding: 15px;
+  padding-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid red; */
 }
 
 .startBtn {
   display: flex;
   justify-content: center;
   margin-top: 15px;
+  margin-bottom: 0;
 }
 
 .startBtn button {
@@ -571,3 +573,20 @@ body[data-theme='dark'] .alert span {
 body[data-theme='dark'] .logo {
   color: #b984ff;
 }
+
+.saveBtn-btn {
+  margin-bottom: 18px;
+}
+
+/* 
+.report-p {
+  margin-top: 5px;
+  text-align: center;
+  font-size: .7rem;
+  margin-bottom: 6px;
+}
+
+.report-Link {
+  text-decoration: none;
+  color: red;
+} */
