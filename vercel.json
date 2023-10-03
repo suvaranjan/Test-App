@@ -1,0 +1,36 @@
+{
+    "routes":[
+        {
+            "src":"/",
+            "dest":"/"
+        },
+        {
+            "src":"/test",
+            "dest":"/"
+        },
+        {
+            "src":"/confetti",
+            "dest":"/"
+        },
+        {
+            "src":"/settings",
+            "dest":"/"
+        },
+        {
+            "src":"/result",
+            "dest":"/"
+        },
+        {
+            "src":"/response",
+            "dest":"/"
+        },
+        {
+            "src":"/readmode",
+            "dest":"/"
+        },        
+        {
+            "src":"/readmode/:id",
+            "dest":"/"
+        }
+    ]
+}
