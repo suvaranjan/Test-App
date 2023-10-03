@@ -114,7 +114,7 @@ export default function Sub() {
 
   const updateMaxTimerValue = () => {
     if (selectedWeek === "all") {
-      setMaxTimerValue(120);
+      setMaxTimerValue(180);
       setTimerValue(60);
       setTotalQuestion(30);
     } else {
