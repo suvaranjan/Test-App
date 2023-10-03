@@ -29,7 +29,7 @@
             "dest":"/"
         },        
         {
-            "src":"/readmode/:id",
+            "src":"/readmode/:id/",
             "dest":"/"
         }
     ]
