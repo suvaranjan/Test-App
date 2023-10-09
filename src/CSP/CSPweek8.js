@@ -87,8 +87,7 @@ export const CSPweek8 = [
     },
     {
         id: 8,
-        question: "Decrypt the following message if it was encrypted using a shift cipher with a shift of 3.",
-        message: "Message: NPTELINFORMATION",
+        question: "Decrypt the following message if it was encrypted using a shift cipher with a shift of 3, Message : NPTELINFORMATION",
         options: {
             a: "Q S W H O L Q I R U P W L R Q",
             b: "Q S W H O L Q I T U P W L R Q",

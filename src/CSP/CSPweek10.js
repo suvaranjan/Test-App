@@ -93,7 +93,7 @@ export const CSPweek10 = [
             d: "Privacy-related content",
             e: "database"
         },
-        answer: "privacy"
+        answer: "data"
     },
     {
         id: 9,

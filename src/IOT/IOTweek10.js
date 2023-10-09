@@ -81,7 +81,7 @@ export const IOTweek10 = [
             c: "Statements 1 and 3",
             d: "Statements 1, 2, and 3"
         },
-        answer: "Statements 1 and 2"
+        answer: "Statements 1, 2, and 3"
     },
     {
         id: 9,
@@ -112,7 +112,7 @@ export const IOTweek10 = [
             a: "True",
             b: "False"
         },
-        answer: "False"
+        answer: "True"
     },
     {
         id: 12,
@@ -123,7 +123,7 @@ export const IOTweek10 = [
             c: "Spinal cord",
             d: "None of these"
         },
-        answer: "INN"
+        answer: "None of these"
     },
     {
         id: 13,
