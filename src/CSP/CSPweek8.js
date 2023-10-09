@@ -23,7 +23,7 @@ export const CSPweek8 = [
     },
     {
         id: 3,
-        question: "A substitution cipher that incorporates two or more alphabets in the encryption process is called________",
+        question: "A substitution cipher that incorporates two or more alphabets in the encryption process is called ________",
         options: {
             a: "Monoalphabetic substitution",
             b: "Block cipher substitution",
@@ -34,7 +34,7 @@ export const CSPweek8 = [
     },
     {
         id: 4,
-        question: "The current standard for the encryption of data, as specified by NIST, is based on the Rijndael algorithm, which was developed by Vincent Rijmen and Joan Daemen.",
+        question: "The current standard for the encryption of data, as specified by NIST _______ is based on the Rijndael algorithm, which was developed by Vincent Rijmen and Joan Daemen.",
         options: {
             a: "DES",
             b: "RSA",
