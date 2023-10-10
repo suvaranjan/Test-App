@@ -9,6 +9,7 @@ import { CSPweek8 } from "./CSP/CSPweek8";
 import { CSPweek9 } from "./CSP/CSPweek9";
 import { CSPweek10 } from "./CSP/CSPweek10";
 import { CSPweek11 } from "./CSP/CSPweek11";
+import { CSPweek12 } from "./CSP/CSPweek12";
 
 
-export const cspArray = CSPweek1.concat(CSPweek2, CSPweek3, CSPweek4, CSPweek5, CSPweek6, CSPweek7, CSPweek8, CSPweek9, CSPweek10, CSPweek11);
+export const cspArray = CSPweek1.concat(CSPweek2, CSPweek3, CSPweek4, CSPweek5, CSPweek6, CSPweek7, CSPweek8, CSPweek9, CSPweek10, CSPweek11, CSPweek12);

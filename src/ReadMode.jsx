@@ -91,6 +91,7 @@ export default function ReadMode() {
                 <option value="week9">Week 9</option>
                 <option value="week10">Week 10</option>
                 <option value="week11">Week 11</option>
+                <option value="week12">Week 12</option>
               </select>
             </div>
 

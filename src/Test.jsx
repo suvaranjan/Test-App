@@ -21,6 +21,7 @@ import {
   cspWeek9Ass,
   cspWeek10Ass,
   cspWeek11Ass,
+  cspWeek12Ass,
 } from "./CSP/CSPComplete";
 import {
   iotWeek1Ass,
@@ -34,6 +35,7 @@ import {
   iotWeek9Ass,
   iotWeek10Ass,
   iotWeek11Ass,
+  iotWeek12Ass,
 } from "./IOT/IOTComplete";
 import Loading from "./Loading";
 
@@ -76,6 +78,7 @@ function Test() {
     week9: iotWeek9Ass,
     week10: iotWeek10Ass,
     week11: iotWeek11Ass,
+    week12: iotWeek12Ass,
     all: iotArray,
   };
 
@@ -91,6 +94,7 @@ function Test() {
     week9: cspWeek9Ass,
     week10: cspWeek10Ass,
     week11: cspWeek11Ass,
+    week12: cspWeek12Ass,
     all: cspArray,
   };
 

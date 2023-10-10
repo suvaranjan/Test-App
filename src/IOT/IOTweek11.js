@@ -74,7 +74,7 @@ export const IOTweek11 = [
             c: "Statements II and III",
             d: "Statements I, II and III"
         },
-        answer: "Statements I and III"
+        answer: "Statements I, II and III"
     },
     {
         id: 8,
@@ -127,7 +127,7 @@ export const IOTweek11 = [
             c: "Automation",
             d: "None of these"
         },
-        answer: "Mass production"
+        answer: "None of these"
     },
     {
         id: 13,
@@ -147,7 +147,7 @@ export const IOTweek11 = [
             a: "True",
             b: "False"
         },
-        answer: "False"
+        answer: "True"
     },
     {
         id: 15,
