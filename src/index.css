@@ -375,9 +375,9 @@ input[type="number"] {
 
 .question {
   /* margin-top: 10px; */
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-size: .9rem;
+  /* font-weight: 600; */
+  margin-bottom: 15px;
 }
 
 .resopt {
@@ -390,7 +390,8 @@ input[type="number"] {
 
 .userResponses {
   /* border: 1px solid red; */
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .score {
@@ -401,8 +402,10 @@ input[type="number"] {
 
 /* CSS */
 .correct {
-  background-color: #018786;
-  color: #FAFAFA;
+  /* background-color: #018786; */
+  /* color: #FAFAFA; */
+  background-color: #154b4b;
+  color: #ffffff;
   /* font-weight: bold; */
   border: none;
 }
