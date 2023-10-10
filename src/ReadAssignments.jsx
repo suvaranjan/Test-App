@@ -110,7 +110,18 @@ export default function ReadAssignments() {
         <div className="m-c">
           {selectedArray.map((item, index) => (
             <div className="userResponses" key={item.id}>
-              <div className="question">
+              <div
+                className="question"
+                style={
+                  isDarkMode
+                    ? {
+                        color: "#d0d0d0",
+                      }
+                    : {
+                        color: "#333333",
+                      }
+                }
+              >
                 {index + 1}. {item.question}
               </div>
               <div className="res-option">

@@ -376,8 +376,9 @@ input[type="number"] {
 .question {
   /* margin-top: 10px; */
   font-size: 1rem;
-  /* font-weight: 600; */
+  font-weight: 600;
   margin-bottom: 15px;
+  /* color: #d0d0d0; */
 }
 
 .resopt {
