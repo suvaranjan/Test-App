@@ -105,7 +105,17 @@ export default function ReadAssignments() {
               ? "Internet of Things"
               : "Cyber Security and Privacy"}
           </h1>
-          <p>{week === "all" ? "All Weeks" : week.replace(/(\d+)/, " $1")}</p>
+          <p
+            style={
+              isDarkMode
+                ? {
+                    color: "#cfcfcf",
+                  }
+                : null
+            }
+          >
+            {week === "all" ? "All Weeks" : week.replace(/(\d+)/, " $1")}
+          </p>
         </div>
         <div className="m-c">
           {selectedArray.map((item, index) => (
@@ -118,7 +128,7 @@ export default function ReadAssignments() {
                         color: "#d0d0d0",
                       }
                     : {
-                        color: "#333333",
+                        color: "#000",
                       }
                 }
               >
@@ -134,8 +144,8 @@ export default function ReadAssignments() {
                     style={
                       !isDarkMode && item.answer === value
                         ? {
-                            background: "#03DAc6",
-                            color: "#000",
+                            background: "#018786",
+                            color: "#fff",
                             // fontWeight: "600",
                             border: "1px solid #4a4a4f",
                           }

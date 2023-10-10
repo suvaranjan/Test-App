@@ -298,7 +298,15 @@ function Test() {
                   ? "Internet of Things"
                   : "Cyber Security and Privacy"}
               </h1>
-              <p>
+              <p
+                style={
+                  isDarkMode
+                    ? {
+                        color: "#cfcfcf",
+                      }
+                    : null
+                }
+              >
                 {week === "all" ? "All Weeks" : week.replace(/(\d+)/, " $1")}
               </p>
             </div>
@@ -313,7 +321,18 @@ function Test() {
           </div>
 
           <div className="question-div">
-            <h1 className="question-h1">
+            <h1
+              className="question-h1"
+              style={
+                isDarkMode
+                  ? {
+                      color: "#d0d0d0",
+                    }
+                  : {
+                      color: "#000",
+                    }
+              }
+            >
               {`${currentQuestion + 1}. `}
               {shuffledQuiz[currentQuestion].question}
             </h1>
