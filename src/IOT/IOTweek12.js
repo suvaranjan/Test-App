@@ -1,7 +1,7 @@
 export const IOTweek12 = [
     {
         id: 1,
-        question: "The two types of data analysis are _____________.",
+        question: "The two types of data analysis are ______.",
         options: {
             a: "Qualitative and Quantitative",
             b: "Repetitive and Quantitative",
@@ -45,7 +45,7 @@ export const IOTweek12 = [
     },
     {
         id: 5,
-        question: "The process by which numerical data is analyzed is known as _______.",
+        question: "The process by which numerical data is analyzed is known as ______.",
         options: {
             a: "Qualitative analysis",
             b: "Quantitative analysis",
@@ -56,7 +56,7 @@ export const IOTweek12 = [
     },
     {
         id: 6,
-        question: "The mathematical equation that is formulated in the form of relationships between variables is known as __________.",
+        question: "The mathematical equation that is formulated in the form of relationships between variables is known as ______.",
         options: {
             a: "Logical model",
             b: "Relational model",
@@ -151,7 +151,7 @@ export const IOTweek12 = [
     },
     {
         id: 15,
-        question: "Fill in the blank. Processing the handheld activity device data with artificial intelligence can be used for ________.",
+        question: "Fill in the blank. Processing the handheld activity device data with artificial intelligence can be used for ______.",
         options: {
             a: "Fall detection",
             b: "Heart rate detection",
