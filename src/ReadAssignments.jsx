@@ -120,7 +120,18 @@ export default function ReadAssignments() {
                       item.answer === value ? "correct" : ""
                     }`}
                     key={key}
-                    style={isDarkMode ? { border: "1px solid #4a4a4f" } : null}
+                    style={
+                      !isDarkMode && item.answer === value
+                        ? {
+                            background: "#03DAc6",
+                            color: "#000",
+                            // fontWeight: "600",
+                            border: "1px solid #4a4a4f",
+                          }
+                        : isDarkMode
+                        ? { border: "1px solid #4a4a4f" }
+                        : null
+                    }
                   >
                     {`${key}. ${value}`}
                   </div>

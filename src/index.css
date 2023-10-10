@@ -375,7 +375,7 @@ input[type="number"] {
 
 .question {
   /* margin-top: 10px; */
-  font-size: .9rem;
+  font-size: 1rem;
   /* font-weight: 600; */
   margin-bottom: 15px;
 }
@@ -406,7 +406,6 @@ input[type="number"] {
   /* color: #FAFAFA; */
   background-color: #154b4b;
   color: #ffffff;
-  /* font-weight: bold; */
   border: none;
 }
 
