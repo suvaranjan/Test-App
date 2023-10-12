@@ -67,14 +67,14 @@ export const IOTweek11 = [
     },
     {
         id: 7,
-        question: "Which of the following statements are true about gateways?",
+        question: "Which of the following statements are true about gateways? Statements : (1) Each gateway connects a few closely located smart meters, (2) Gateways communicate mostly based on WiFi, (3) They help in two-way communication.",
         options: {
-            a: "Statements I and II",
-            b: "Statements I and III",
-            c: "Statements II and III",
-            d: "Statements I, II and III"
+            a: "Statements 1 and 2",
+            b: "Statements 1 and 3",
+            c: "Statements 2 and 3",
+            d: "Statements 1, 2 and 3"
         },
-        answer: "Statements I, II and III"
+        answer: "Statements 1, 2 and 3"
     },
     {
         id: 8,

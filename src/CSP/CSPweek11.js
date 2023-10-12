@@ -40,7 +40,7 @@ export const CSPweek11 = [
             c: "processing for the purposes of crime and investigations",
             d: "processing for the purposes of journalism literature and art"
         },
-        answer: "processing for the purposes of crime and investigations"
+        answer: "processing for domestic and household purposes"
     },
     {
         id: 5,
@@ -73,7 +73,7 @@ export const CSPweek11 = [
             c: "A-4, B-3, C-1, D-2",
             d: "A-1, B-3, C-4, D-2"
         },
-        answer: "A-4, B-3, C-1, D-2"
+        answer: "A-1, B-3, C-4, D-2"
     },
     {
         id: 8,
