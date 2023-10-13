@@ -68,7 +68,7 @@ export const CSPweek11 = [
         id: 7,
         question: "Match topics of interest to IT Professionals with US Laws : [(A) Cryptography Communications Privacy Act,(B) IP, (C) Encryption and digital signatures amends, (D) Privacy through Encryption Act] , [(1) Electronic, (2) Federal Privacy Act, (3) No Electronic Theft Act, (4) Security and Freedom ]",
         options: {
-            a: "A-4, B-3, C-1, D-2",
+            a: "A-2, B-3, C-4, D-1",
             b: "A-3, B-1, C-4, D-2",
             c: "A-4, B-3, C-1, D-2",
             d: "A-1, B-3, C-4, D-2"
