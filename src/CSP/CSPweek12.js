@@ -19,7 +19,7 @@ export const CSPweek12 = [
             c: "1, 4",
             d: "1, 2"
         },
-        answer: "2, 3"
+        answer: "1, 4"
     },
     {
         id: 3,
@@ -86,7 +86,7 @@ export const CSPweek12 = [
             d: "Restrict continuing disclosure of their personal data by a fiduciary, if it is no longer necessary Or consent is withdrawn",
             e: "Provide advice on security safeguards like data encryption"
         },
-        answer: "Provide advice on security safeguards like data encryption"
+        answer: "Obtain confirmation from the fiduciary on whether their personal data has been processed"
     },
     {
         id: 9,

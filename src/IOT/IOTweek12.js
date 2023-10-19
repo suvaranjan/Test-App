@@ -158,6 +158,6 @@ export const IOTweek12 = [
             c: "Vehicle detection",
             d: "All of these"
         },
-        answer: "All of these"
+        answer: "Fall detection"
     },
 ];
