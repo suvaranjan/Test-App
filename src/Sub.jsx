@@ -211,7 +211,7 @@ export default function Sub() {
         <div className="sub-div">
           <div className="box1">
             <h1>NPTEL TEST</h1>
-            <p style={isDarkMode ? { color: "#b2b2bf" } : null}>Week 1 to 12</p>
+            <p style={isDarkMode ? { color: "#b2b2bf" } : null}>For Practice</p>
           </div>
 
           <div className="box2">
