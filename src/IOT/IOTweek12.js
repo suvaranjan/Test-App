@@ -116,7 +116,7 @@ export const IOTweek12 = [
             c: "Processing layer",
             d: "All of these"
         },
-        answer: "d"
+        answer: "All of these"
     },
     {
         id: 12,
