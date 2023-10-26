@@ -10,7 +10,7 @@ import { CSPweek9 } from "./CSPweek9";
 import { CSPweek10 } from "./CSPweek10";
 import { CSPweek11 } from "./CSPweek11";
 import { CSPweek12 } from "./CSPweek12";
-import { cspArray } from "../CSP"
+import { CSPAllWeeks } from "./CSPAllWeeks"
 
 export const cspWeek1Ass = CSPweek1;
 export const cspWeek2Ass = CSPweek2;
@@ -38,5 +38,5 @@ export const cspAllWeeksLength = {
     CSPWeek10Length: CSPweek10.length,
     CSPWeek11Length: CSPweek11.length,
     CSPWeek12Length: CSPweek12.length,
-    CSPAllWeeksLength: cspArray.length,
+    CSPAllWeeksLength: CSPAllWeeks.length,
 }

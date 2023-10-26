@@ -62,6 +62,8 @@ export default function ReadMode() {
               >
                 <option value="IOT">Internet of things</option>
                 <option value="CSP">Cyber security and privacy</option>
+                <option value="CC">Cloud Computing</option>
+                <option value="MIS">Management Information System</option>
               </select>
             </div>
             <div>

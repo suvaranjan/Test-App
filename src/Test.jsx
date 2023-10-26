@@ -7,8 +7,10 @@ import {
   useTheme,
   useSetting,
 } from "./store/zustand";
-import { cspArray } from "./CSP";
-import { iotArray } from "./IOT";
+import { CSPAllWeeks } from "./CSP/CSPAllWeeks";
+import { IOTAllWeeks } from "./IOT/IOTAllWeeks";
+import { CCAllWeeks } from "./CC/CCAllWeeks";
+import { MISAllWeeks } from "./MIS/MISAllWeeks";
 import {
   cspWeek1Ass,
   cspWeek2Ass,
@@ -37,6 +39,37 @@ import {
   iotWeek11Ass,
   iotWeek12Ass,
 } from "./IOT/IOTComplete";
+
+import {
+  ccWeek1Ass,
+  ccWeek2Ass,
+  ccWeek3Ass,
+  ccWeek4Ass,
+  ccWeek5Ass,
+  ccWeek6Ass,
+  ccWeek7Ass,
+  ccWeek8Ass,
+  ccWeek9Ass,
+  ccWeek10Ass,
+  ccWeek11Ass,
+  ccWeek12Ass,
+} from "./CC/CCComplete";
+
+import {
+  misWeek1Ass,
+  misWeek2Ass,
+  misWeek3Ass,
+  misWeek4Ass,
+  misWeek5Ass,
+  misWeek6Ass,
+  misWeek7Ass,
+  misWeek8Ass,
+  misWeek9Ass,
+  misWeek10Ass,
+  misWeek11Ass,
+  misWeek12Ass,
+} from "./MIS/MISComplete";
+
 import Loading from "./Loading";
 
 function Test() {
@@ -79,7 +112,7 @@ function Test() {
     week10: iotWeek10Ass,
     week11: iotWeek11Ass,
     week12: iotWeek12Ass,
-    all: iotArray,
+    all: IOTAllWeeks,
   };
 
   const CSPweekArrays = {
@@ -95,16 +128,51 @@ function Test() {
     week10: cspWeek10Ass,
     week11: cspWeek11Ass,
     week12: cspWeek12Ass,
-    all: cspArray,
+    all: CSPAllWeeks,
+  };
+
+  const CCweekArrays = {
+    week1: ccWeek1Ass,
+    week2: ccWeek2Ass,
+    week3: ccWeek3Ass,
+    week4: ccWeek4Ass,
+    week5: ccWeek5Ass,
+    week6: ccWeek6Ass,
+    week7: ccWeek7Ass,
+    week8: ccWeek8Ass,
+    week9: ccWeek9Ass,
+    week10: ccWeek10Ass,
+    week11: ccWeek11Ass,
+    week12: ccWeek12Ass,
+    all: CCAllWeeks,
+  };
+
+  const MISweekArrays = {
+    week1: misWeek1Ass,
+    week2: misWeek2Ass,
+    week3: misWeek3Ass,
+    week4: misWeek4Ass,
+    week5: misWeek5Ass,
+    week6: misWeek6Ass,
+    week7: misWeek7Ass,
+    week8: misWeek8Ass,
+    week9: misWeek9Ass,
+    week10: misWeek10Ass,
+    week11: misWeek11Ass,
+    week12: misWeek12Ass,
+    all: MISAllWeeks,
   };
 
   const quizArray =
     subject === "IOT"
       ? IOTweekArrays[week] || IOTweekArrays.all
-      : CSPweekArrays[week] || CSPweekArrays.all;
+      : subject === "CSP"
+      ? CSPweekArrays[week] || CSPweekArrays.all
+      : subject === "CC"
+      ? CCweekArrays[week] || CCweekArrays.all
+      : MISweekArrays[week] || MISweekArrays.all;
 
   useEffect(() => {
-    // setTotalQuestions(quizArray.length);
     const shuffled = shuffleArray(quizArray.slice(0, totalQuestions));
     setShuffledQuiz(shuffled);
     setCurrentQuestion(0);
@@ -296,7 +364,11 @@ function Test() {
               <h1>
                 {subject === "IOT"
                   ? "Internet of Things"
-                  : "Cyber Security and Privacy"}
+                  : subject === "CSP"
+                  ? "Cyber Security and Privacy"
+                  : subject === "CC"
+                  ? "Cloud Computing"
+                  : "Management Information System"}
               </h1>
               <p
                 style={

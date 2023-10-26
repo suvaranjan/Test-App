@@ -10,7 +10,7 @@ import { IOTweek9 } from "./IOTweek9";
 import { IOTweek10 } from "./IOTweek10";
 import { IOTweek11 } from "./IOTweek11";
 import { IOTweek12 } from "./IOTweek12";
-import { iotArray } from "../IOT"
+import { IOTAllWeeks } from "./IOTAllWeeks"
 
 export const iotWeek1Ass = IOTweek1;
 export const iotWeek2Ass = IOTweek2;
@@ -38,5 +38,5 @@ export const iotAllWeeksLength = {
     IOTWeek10Length: IOTweek10.length,
     IOTWeek11Length: IOTweek11.length,
     IOTWeek12Length: IOTweek12.length,
-    IOTAllWeeksLength: iotArray.length,
+    IOTAllWeeksLength: IOTAllWeeks.length,
 }

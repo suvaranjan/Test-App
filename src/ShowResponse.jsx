@@ -26,7 +26,9 @@ export default function ShowResponse() {
         <h1>
           {subject === "IOT"
             ? "Internet of Things"
-            : "Cyber Security and Privacy"}
+            : subject === "CSP"
+            ? "Cyber Security and Privacy"
+            : "Cloud Computing"}
         </h1>
         <p
           style={

@@ -10,11 +10,13 @@ import {
 
 import { iotAllWeeksLength } from "./IOT/IOTComplete";
 import { cspAllWeeksLength } from "./CSP/CSPComplete";
+import { ccAllWeeksLength } from "./CC/CCComplete";
+import { misAllWeeksLength } from "./MIS/MISComplete";
+
 import toast, { Toaster } from "react-hot-toast";
 
 export default function Sub() {
   const [maxTimerValue, setMaxTimerValue] = useState(30);
-
   const { isDarkMode } = useTheme();
   const navigate = useNavigate();
   const { setSubject, setWeek } = useRead();
@@ -53,6 +55,38 @@ export default function Sub() {
     CSPWeek12Length,
     CSPAllWeeksLength,
   } = cspAllWeeksLength;
+
+  const {
+    CCWeek1Length,
+    CCWeek2Length,
+    CCWeek3Length,
+    CCWeek4Length,
+    CCWeek5Length,
+    CCWeek6Length,
+    CCWeek7Length,
+    CCWeek8Length,
+    CCWeek9Length,
+    CCWeek10Length,
+    CCWeek11Length,
+    CCWeek12Length,
+    CCAllWeeksLength,
+  } = ccAllWeeksLength;
+
+  const {
+    MISWeek1Length,
+    MISWeek2Length,
+    MISWeek3Length,
+    MISWeek4Length,
+    MISWeek5Length,
+    MISWeek6Length,
+    MISWeek7Length,
+    MISWeek8Length,
+    MISWeek9Length,
+    MISWeek10Length,
+    MISWeek11Length,
+    MISWeek12Length,
+    MISAllWeeksLength,
+  } = misAllWeeksLength;
 
   // State to manage the timer value
   const [timerValue, setTimerValue] = useState(20);
@@ -95,6 +129,37 @@ export default function Sub() {
       week10: CSPWeek10Length,
       week11: CSPWeek11Length,
       week12: CSPWeek12Length,
+    },
+    CC: {
+      all: CCAllWeeksLength,
+      week1: CCWeek1Length,
+      week2: CCWeek2Length,
+      week3: CCWeek3Length,
+      week4: CCWeek4Length,
+      week5: CCWeek5Length,
+      week6: CCWeek6Length,
+      week7: CCWeek7Length,
+      week8: CCWeek8Length,
+      week9: CCWeek9Length,
+      week10: CCWeek10Length,
+      week11: CCWeek11Length,
+      week12: CCWeek12Length,
+    },
+
+    MIS: {
+      all: MISAllWeeksLength,
+      week1: MISWeek1Length,
+      week2: MISWeek2Length,
+      week3: MISWeek3Length,
+      week4: MISWeek4Length,
+      week5: MISWeek5Length,
+      week6: MISWeek6Length,
+      week7: MISWeek7Length,
+      week8: MISWeek8Length,
+      week9: MISWeek9Length,
+      week10: MISWeek10Length,
+      week11: MISWeek11Length,
+      week12: MISWeek12Length,
     },
   };
 
@@ -235,6 +300,8 @@ export default function Sub() {
                 >
                   <option value="IOT">Internet of things</option>
                   <option value="CSP">Cyber security and privacy</option>
+                  <option value="CC">Cloud Computing</option>
+                  <option value="MIS">Management Information System</option>
                 </select>
               </div>
               <div>
