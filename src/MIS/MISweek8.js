@@ -1,7 +1,7 @@
 export const MISweek8 = [
     {
         id: 1,
-        question: "Which of the following is TRUE regarding E-commerce and E-Business? [ I => E-Business is a super-set of E-Commerce. Business transactions are supported in E-Business, II => E-Business and E-Commerce can be used interchangeably, III => In E-Commerce, the Internet facilitates customer transactions, IV => In E-Business, the Internet facilitates transactions with suppliers, vendors etc. ]",
+        question: "Which of the following is TRUE regarding E-commerce and E-Business? [ I => E-Business is a super-set of E-Commerce. Business transactions are supported in E-Business, II => E-Business and E-Commerce can be used interchangeably, III => In E-Commerce, the Internet facilitates customer transactions, IV => In E-Business, the Internet facilitates transactions with suppliers, vendors etc.]",
         options: {
             a: "I, II, and III.",
             b: "I, II, and IV.",
