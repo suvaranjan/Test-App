@@ -143,7 +143,6 @@ export default function ReadAssignments() {
     selectedArray = CSPweekArrays[id] || [];
   }
 
-  console.log(selectedArray);
   return (
     <>
       <div
