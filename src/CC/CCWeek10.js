@@ -1,7 +1,7 @@
 export const CCweek10 = [
     {
         id: 1,
-        question: "Given the VM memory size of 1024 GB and the transmission rate of 16 MB/sec, what are the total migration time and downtime for non-live VM migration?",
+        question: "Given the VM memory size of 1024 GB and the transmission rate of 16 MB/sec, what are the total migration time and downtime for non-live VM migration ?",
         options: {
             a: "20 hours, 25 hours",
             b: "18 hours, 18 hours",
