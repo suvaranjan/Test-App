@@ -45,7 +45,7 @@ export const MISweek8 = [
     },
     {
         id: 5,
-        question: "Which parameters are considered for ranking a country for the e-commerce market?",
+        question: "Which parameters are considered for ranking a country for the e-commerce market? [ I => The average revenue per shopper, II => The number of products listed on the website, III => The percentage of the population selling online, IV => The percentage of the population shopping online. ]",
         options: {
             a: "I, II, and III.",
             b: "I, III, and IV.",
