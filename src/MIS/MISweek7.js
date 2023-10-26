@@ -1,7 +1,7 @@
 export const MISweek7 = [
     {
         id: 1,
-        question: "Which of the following is/are true in the context of business strategy?",
+        question: "Which of the following is/are true in the context of business strategy? [ i => Business strategy starts with a mission., ii => A long-term plan that helps an organization to achieve their goals, iii => Providing unique services only, iv => Selling products cheaper than your competitors. ]",
         options: {
             a: "i and ii",
             b: "i, iii, and iv",
@@ -45,7 +45,7 @@ export const MISweek7 = [
     },
     {
         id: 5,
-        question: "Which of the following are the benefits of Virtualization?",
+        question: "Which of the following are the benefits of Virtualization? [i => Increases the flexibility of IT assets, ii => Allows companies to consolidate IT infrastructure, iii => Reduces maintenance and administration costs, iv => Prepares for strategic initiatives. ]",
         options: {
             a: "i only",
             b: "i, ii, and iii",
